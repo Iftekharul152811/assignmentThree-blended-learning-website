@@ -8,11 +8,15 @@
     <title>Blended Learning Center</title>
     <!-- bootstrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
     <!-- font-google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/6a838a785a.js" crossorigin="anonymous"></script>
 
     <style>
         body {
@@ -145,7 +149,7 @@
         </div>
 
         <!-- courses section  -->
-        <section class="container pt-5">
+        <section class="container py-5 mb-5">
             <div class="row g-4">
                 <!-- single course  -->
                 <div class="d-flex justify-content-center align-items-center col-6">
@@ -226,6 +230,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- see more courses button  -->
             <div class="d-flex justify-content-center align-items-center pt-5">
                 <button type="button" class="btn btn-primary px-5 py-3 fw-semibold ">See More Courses</button>
@@ -234,7 +239,7 @@
 
 
         <!-- learn without limits section  -->
-        <section class="container pt-5 mt-5">
+        <section class="container py-5 mt-5">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <img src="images/working.png" alt="">
@@ -264,10 +269,322 @@
                             <span>Rating and review</span>
                         </p>
                     </div>
+
+                    <!-- read more button  -->
                     <button type="button" class="btn btn-primary px-5 py-3 fw-semibold ">Read More</button>
                 </div>
             </div>
         </section>
+
+
+        <!-- ready to join section  -->
+        <section class="container bg-primary text-white  border rounded-3 py-5 mt-5">
+            <div class="d-flex justify-content-between align-content-center px-5 py-3">
+                <div>
+                    <p>100% Free</p>
+                    <h1 class="fw-semibold">Start Learning with Free Courses <i
+                            class="fa-solid fa-arrow-right-long"></i></h1>
+                    <p>Free online courses from the world's top universities and companies.</p>
+                </div>
+
+                <!-- Register now button  -->
+                <div class="d-flex align-items-center ">
+                    <div>
+                        <button type="button" class="btn btn-light text-primary px-5 py-3 fw-semibold"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register
+                            Now</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title text-black fw-bold" id="staticBackdropLabel">
+                                            Register Form</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-bg-light">
+
+                                        <!-- register form  -->
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="5500, Stadium Road, Lalmonirhat">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Register</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- meet our successful students section -->
+        <div class="container pt-5 mt-5">
+            <h1 class="fw-semibold w-50">Meet Our successful Students</h1>
+            <p class="w-50 pt-3">87k+ students are already learning on Blended learning center. All are supported by our
+                mentors and they are successfully achived their goal</p>
+        </div>
+        <section class="container pt-3">
+            <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/student/student-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">Iftekhar Ridoy</h5>
+                                <p class="card-text">UIUX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/student/student-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">Liza Akter</h5>
+                                <p class="card-text">Motion Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/student/student-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">Ridoy Sarker</h5>
+                                <p class="card-text">Grapgic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/student/student-4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">Liza AKter Meem</h5>
+                                <p class="card-text">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- see more successful students button  -->
+            <div class="d-flex justify-content-center align-items-center pt-5">
+                <button type="button" class="btn btn-primary px-5 py-3 fw-semibold ">See More</button>
+            </div>
+        </section>
+
+
+        <!-- feedback section  -->
+        <div class="container w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-semibold">Some Students Feedback</h1>
+            <p class="text-center pt-3">87k+ students are already learning on Blended learning center. All are supported
+                by
+                our
+                mentors and they are successfully achived their goal</p>
+        </div>
+
+        <section class="container pt-3 pb-5">
+            <div>
+                <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                    <div class="col">
+                        <div class="card h-100 px-5 py-3">
+                            <div class="d-flex justify-content-between align-items-center p-0">
+                                <p class="display-2 p-0"><i class="fa-solid fa-quote-right"></i></p>
+                                <p><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </p>
+                            </div>
+                            <p class="card-text">For the first time, finishing my degree seemed realistic. It was
+                                online with a flexible schedule. It felt like this program was made for my situation.
+                            </p>
+                            <div class="card-footer border border-0 bg-white pt-3 px-0 d-flex align-items-center">
+                                <div>
+                                    <img src="images/student/student-5.png" alt="">
+                                </div>
+                                <div class="px-3">
+                                    <span class="fw-semibold">Iftekharul Islam</span>
+                                    <br>
+                                    <span>Web Developer</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 px-5 py-3">
+                            <div class="d-flex justify-content-between align-items-center p-0">
+                                <p class="display-2 p-0"><i class="fa-solid fa-quote-right"></i></p>
+                                <p><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </p>
+                            </div>
+                            <p class="card-text">For the first time, finishing my degree seemed realistic. It was
+                                online with a flexible schedule. It felt like this program was made for my situation.
+                            </p>
+                            <div class="card-footer border border-0 bg-white pt-3 px-0 d-flex align-items-center">
+                                <div>
+                                    <img src="images/student/student-6.png" alt="">
+                                </div>
+                                <div class="px-3">
+                                    <span class="fw-semibold">Liza AKter Meem</span>
+                                    <br>
+                                    <span>Graphic Designer</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- frequntly asked question section -->
+        <div class="container w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-semibold">Frequently Asked Question</h1>
+            <p class="text-center pt-3">Bootstrap is a free front-end framework for faster and easier web development.
+                Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables,
+                navigation, modals, carousels and many other, as well as optional JavaScript plugins</p>
+        </div>
+        <section class="container d-flex justify-content-center pt-3">
+            <div class="w-75">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong>What is the difference between Flexbox and Grid?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><span><strong>1. Dimensionality and Flexibility:</strong> Flexbox offers greater
+                                        control over alignment and space distribution between
+                                        items. Being one-dimensional, Flexbox only deals with either columns or rows.
+                                        <br>
+                                        Grid has two-dimension layout capabilities which allow flexible widths as a
+                                        unit
+                                        of length. This compensates for the limitations in Flex.</span>
+                                    <br>
+                                    <span><strong>2. Alignment:</strong> Flex Direction allows developers to align
+                                        elements vertically or horizontally,
+                                        which is used when developers create and reverse rows or columns.
+                                        <br>
+                                        CSS Grid deploys fractional measure units for grid fluidity and auto-keyword
+                                        functionality to automatically adjust columns or rows.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>What is the difference between Bootstrap & Tailwind?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>Bootstrap</strong> comes with a set of pre-styled responsive, mobile-first
+                                    components that possess a definite UI kit.</p>
+                                <p><strong>Tailwind</strong> offers predesigned widgets to build a site from scratch
+                                    with fast UI development.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>What is CSS Box Model?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                In CSS, the term "box model" is used when talking about design and layout. The CSS box
+                                model is essentially
+                                <strong> a box that wraps around every HTML element. </strong>
+                                It consists of: margins, borders, padding, and the actual content.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>What is Semantic Tag?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The HTML semantics refers to
+                                <strong>the tags that provide meaning to an HTML page rather than just
+                                    presentation.</strong>
+                                It makes HTML more comprehensible by better defining the different sections and layout
+                                of web pages.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
     </main>
 
