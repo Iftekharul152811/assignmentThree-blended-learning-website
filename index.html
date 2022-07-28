@@ -25,6 +25,53 @@
 
         .slider-item {
             height: 600px;
+            position: relative;
+            text-align: center;
+        }
+
+        .slider-caption {
+            position: absolute;
+            top: 25%;
+        }
+
+        .overlay {
+            filter: brightness(50%);
+        }
+
+
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+            .slider-caption {
+                position: absolute;
+                top: 15%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .slider-caption {
+                position: absolute;
+                top: 5%;
+            }
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            /* .slider-heading {
+                font-size: 24px;
+                padding-bottom: 0;
+            }
+
+            .slider-p {
+                font-size: 14px;
+                padding: 0px 0px 0px 0px;
+            }*/
+
+            .slider-caption {
+                position: absolute;
+                top: 2%;
+            }
+
+            .slider-item {
+                height: 100%;
+            }
         }
     </style>
 
@@ -34,10 +81,10 @@
 <body>
     <header>
         <!-- navbar  -->
-        <section class="container pb-5">
-            <nav class="navbar navbar-expand-lg bg-light">
+        <section class="container pb-5 mb-5">
+            <nav class="navbar fixed-top navbar-expand-lg bg-light">
                 <div class="container">
-                    <a class="navbar-brand fw-bolder fs-2" href="#">Blended Learning</a>
+                    <a class="navbar-brand fw-bolder fs-2" href="#">BLC</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -46,27 +93,27 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active fs-5 px-3" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active fs-5 px-lg-3" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 px-3" href="#">Courses</a>
+                                <a class="nav-link fs-5 px-lg-3" href="#">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 px-3" href="#">Deals</a>
+                                <a class="nav-link fs-5 px-lg-3" href="#">Deals</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 px-3" href="#">Success</a>
+                                <a class="nav-link fs-5 px-lg-3" href="#">Success</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 px-3" href="#">About</a>
+                                <a class="nav-link fs-5 px-lg-3" href="#">About</a>
                             </li>
-                            <li class="nav-item fs-5 px-3">
+                            <li class="nav-item fs-5 px-lg-3">
                                 <a class="nav-link" href="#">Register</a>
                             </li>
                         </ul>
-                        <div>
-                            <button type="button" class="btn btn-outline-info fw-bold fs-4 px-4">Register</button>
-                        </div>
+
+                        <button type="button" class="btn btn-outline-primary fw-bold fs-4 px-4">Register</button>
+
                     </div>
                 </div>
             </nav>
@@ -85,40 +132,41 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="slider-item carousel-item active">
-                        <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block pb-5 mb-5">
-                            <h1 class="display-3 fw-semibold pb-3">Let's Start A Hybrid <br> Learning System </h1>
-                            <p class="pb-3 fs-5">Blended learningor is an approach to education that combines online
+                        <img src="images/cover/cover-1.png" class="d-block w-100 overlay" alt="...">
+                        <div class="carousel-caption pb-5 mb-5 slider-caption">
+                            <h1 class="slider-heading fw-semibold pb-3">Let's Start A Hybrid <br> Learning System
+                            </h1>
+                            <p class="slider-p pb-3">Blended learningor is an approach to education that combines
+                                online
                                 educational
                                 materials
-                                and opportunities for interaction online with traditional place-based classroom
-                                methods.
+                                and opportunities for interaction online.
                             </p>
                             <button type="button" class="btn btn-primary px-5 py-3 fw-semibold">Get Started</button>
                         </div>
                     </div>
                     <div class="slider-item carousel-item">
-                        <img src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+                        <img src="images/cover/cover-2.jpg" class="d-block w-100 overlay" alt="...">
                         <div class="carousel-caption d-none d-md-block pb-5 mb-5">
-                            <h1 class="display-3 fw-semibold pb-3">Let's Start A Hybrid <br> Learning System </h1>
-                            <p class="pb-3 fs-5">Blended learningor is an approach to education that combines online
+                            <h1 class="slider-heading  fw-semibold pb-3">Let's Start A Hybrid <br> Learning System </h1>
+                            <p class=" slider-p pb-3">Blended learningor is an approach to education that combines
+                                online
                                 educational
                                 materials
-                                and opportunities for interaction online with traditional place-based classroom
-                                methods.
+                                and opportunities for interaction online.
                             </p>
                             <button type="button" class="btn btn-primary px-5 py-3 fw-semibold">Get Started</button>
                         </div>
                     </div>
                     <div class="slider-item carousel-item">
-                        <img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+                        <img src="images/cover/cover-3.jpg" class="d-block w-100 overlay" alt="...">
                         <div class="carousel-caption d-none d-md-block pb-5 mb-5">
-                            <h1 class="display-3 fw-semibold pb-3">Let's Start A Hybrid <br> Learning System </h1>
-                            <p class="pb-3 fs-5">Blended learningor is an approach to education that combines online
+                            <h1 class=" slider-heading  fw-semibold pb-3">Let's Start A Hybrid <br> Learning System
+                            </h1>
+                            <p class="slider-p pb-3">Blended learningor is an approach to education that combines online
                                 educational
                                 materials
-                                and opportunities for interaction online with traditional place-based classroom
-                                methods.
+                                and opportunities for interaction online.
                             </p>
                             <button type="button" class="btn btn-primary px-5 py-3 fw-semibold">Get Started</button>
                         </div>
@@ -140,8 +188,9 @@
 
     <main>
 
-        <div class="container w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="fw-semibold">What is Blended Learning </h1>
+        <div
+            class="container w-50 pt-0 pt-lg-5 mt-0 mt-lg-5 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-semibold text-center">What is Blended Learning </h1>
             <p>Blended Learning Center is the digital teaching and learning hub of our institution. The platform aims to
                 connect
                 teachers and students effectively allowing teachers to track progress of individual students and better
@@ -150,7 +199,7 @@
 
         <!-- courses section  -->
         <section class="container py-5 mb-5">
-            <div class="row g-4">
+            <div class="row row-cols-md-1 row-cols-lg-2 g-4">
                 <!-- single course  -->
                 <div class="d-flex justify-content-center align-items-center col-6">
                     <div>
@@ -241,33 +290,39 @@
         <!-- learn without limits section  -->
         <section class="container py-5 mt-5">
             <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <img src="images/working.png" alt="">
+                <div class="w-50">
+                    <img src="images/working.png" class="w-100" alt="">
                 </div>
-                <div class="p-5">
-                    <h1 class="display-4 fw-semibold">Learn without limits</h1>
+                <div class="p-5 w-50">
+                    <h1 class="fw-semibold">Learn without limits</h1>
                     <p class="pt-3">Start, switch, or advance your career with more than 5,000 courses, Professional
                         Certificates,
-                        and degrees from world-class universities and companies. Break into a new field like information
-                        technology or data science. No prior experience necessary to get started.
+                        and degrees from world-class universities and companies. <span
+                            class="d-md-none d-lg-block">Break into a new field like information
+                            technology or data science. No prior experience necessary to get started.</span>
                     </p>
-                    <p class="pt-3">87% of people learning for professional development report career benefits like
+                    <p class="pt-3 d-md-none d-lg-block">87% of people learning for professional development report
+                        career
+                        benefits
+                        like
                         getting a
                         promotion, a raise, or starting a new caree</p>
-                    <div class="d-flex justify-content-between pt-3 pb-3">
+                    <div class="d-md-none d-lg-block">
+                        <div class="d-flex justify-content-between pt-3 pb-3">
 
-                        <p>
-                            <span class="fs-1 fw-semibold">3.2k+</span> <br>
-                            <span>Online Course</span>
-                        </p>
-                        <p>
-                            <span class="fs-1 fw-semibold">600+</span> <br>
-                            <span>Expert Member</span>
-                        </p>
-                        <p>
-                            <span class="fs-1 fw-semibold">1k+</span> <br>
-                            <span>Rating and review</span>
-                        </p>
+                            <p>
+                                <span class="fs-1 fw-semibold">3.2k+</span> <br>
+                                <span>Online Course</span>
+                            </p>
+                            <p>
+                                <span class="fs-1 fw-semibold">600+</span> <br>
+                                <span>Expert Member</span>
+                            </p>
+                            <p>
+                                <span class="fs-1 fw-semibold">1k+</span> <br>
+                                <span>Rating and review</span>
+                            </p>
+                        </div>
                     </div>
 
                     <!-- read more button  -->
@@ -277,13 +332,12 @@
         </section>
 
 
-        <!-- ready to join section  -->
+        <!--  Register section  -->
         <section class="container bg-primary text-white  border rounded-3 py-5 mt-5">
-            <div class="d-flex justify-content-between align-content-center px-5 py-3">
-                <div>
+            <div class="d-flex  flex-column flex-lg-row align-items-center justify-content-between px-5 py-3">
+                <div class="d-flex flex-column align-items-center align-items-lg-baseline">
                     <p>100% Free</p>
-                    <h1 class="fw-semibold">Start Learning with Free Courses <i
-                            class="fa-solid fa-arrow-right-long"></i></h1>
+                    <h1 class="fw-semibold">Start Learning <i class="fa-solid fa-arrow-right-long"></i></h1>
                     <p>Free online courses from the world's top universities and companies.</p>
                 </div>
 
@@ -365,13 +419,13 @@
 
         <!-- meet our successful students section -->
         <div class="container pt-5 mt-5">
-            <h1 class="fw-semibold w-50">Meet Our successful Students</h1>
+            <h1 class="fw-semibold w-lg-50">Meet Our successful Students</h1>
             <p class="w-50 pt-3">87k+ students are already learning on Blended learning center. All are supported by our
                 mentors and they are successfully achived their goal</p>
         </div>
         <section class="container pt-3">
             <div>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card h-100">
                             <img src="images/student/student-1.png" class="card-img-top" alt="...">
@@ -420,7 +474,7 @@
 
         <!-- feedback section  -->
         <div class="container w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="fw-semibold">Some Students Feedback</h1>
+            <h1 class="fw-semibold text-center">Some Students Feedback</h1>
             <p class="text-center pt-3">87k+ students are already learning on Blended learning center. All are supported
                 by
                 our
@@ -429,7 +483,7 @@
 
         <section class="container pt-3 pb-5">
             <div>
-                <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="row  row-cols-md-1 row-cols-lg-2 g-4 ">
                     <div class="col">
                         <div class="card h-100 px-5 py-3">
                             <div class="d-flex justify-content-between align-items-center p-0">
@@ -486,12 +540,17 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center align-items-center pt-5 d-lg-none d-md-block ">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary px-5 py-3 fw-semibold ">View More</button>
+                </div>
+            </div>
         </section>
 
 
         <!-- frequntly asked question section -->
         <div class="container w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="fw-semibold">Frequently Asked Question</h1>
+            <h1 class="fw-semibold text-center">Frequently Asked Question</h1>
             <p class="text-center pt-3">Bootstrap is a free front-end framework for faster and easier web development.
                 Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables,
                 navigation, modals, carousels and many other, as well as optional JavaScript plugins</p>
@@ -563,13 +622,13 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 <strong>What is Semantic Tag?</strong>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 The HTML semantics refers to
@@ -587,10 +646,10 @@
 
 
         <!-- trusted companies section  -->
-        <div class="container w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="container d-md-none w-50 pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
             <h1 class="fw-semibold pt-3">Trusted by over 800+ companies</h1>
         </div>
-        <section class="container pt-3">
+        <section class="container d-md-none pt-3">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <img src="images/company/company-1.png" alt="">
@@ -622,8 +681,8 @@
                     <span>Khordoshaptana, Lalmonirhat</span>
                 </p>
                 <p>
-                    <span class="px-3">Privacy & Policy</span>
-                    <span class="px-3">Terms & Conditions</span>
+                    <span class="">Privacy & Policy I </span>
+                    <span class="">Terms & Conditions</span>
                 </p>
                 <p>
                     <span class="px-1 fs-3"><i class="fa-brands fa-square-facebook"></i></span>
